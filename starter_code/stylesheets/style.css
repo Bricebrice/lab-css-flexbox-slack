@@ -142,12 +142,18 @@ table {
 
 html {
   font-size: 10px;
+  box-sizing: border-box;
 }
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica", sans-serif;
+}
+p {
+  font-size: 1.4rem;
+  /* font-weight: 600; */
 }
 
 /* NAV */
+
 nav {
   width: 100vw;
   display: flex;
@@ -157,6 +163,7 @@ nav {
   color: white;
   padding: 1.6em;
   box-sizing: border-box;
+  /* margin-bottom: 1.6rem; */
 }
 
 nav div {
@@ -169,7 +176,7 @@ nav div > img {
 }
 
 nav button {
-  margin-left: 10px;
+  margin-left: 1rem;
   border: 0;
   background-color: inherit;
 }
@@ -177,3 +184,163 @@ nav button {
 nav ul {
   display: none;
 }
+
+/* END NAV */
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #540b51;
+  color: white;
+  padding: 1.6rem 0;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.6em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.6rem 0;
+}
+
+header p {
+  text-align: center;
+  margin: 1.6rem;
+}
+
+header button {
+  height: 5rem;
+  margin: 0 1.6rem 1.6rem;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+header button:first-child {
+  background-color: white;
+  color: #540b51;
+}
+
+header button img {
+  width: 2rem;
+  background-color: white;
+  border-radius: 3px;
+  padding: 0.8rem;
+}
+
+header button span {
+  text-align: center;
+  flex-grow: 1;
+  margin-left: -3.8rem;
+}
+
+header > div > img {
+  width: 100vw;
+}
+
+/* END HEADER */
+/* MAIN */
+
+main {
+  /* padding: 1.6rem; */
+  background-color: #f3eae2;
+}
+
+main section {
+  margin-bottom: 1.6rem;
+}
+
+main section > p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.6rem 0;
+}
+
+main > section:first-child {
+  padding: 1.6rem;
+}
+
+main > section:first-child > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main img[src="./images/logo-airbnb.png"],
+img[src="./images/logo-nasa.png"],
+img[src="./images/logo-uber.png"],
+img[src="./images/logo-target.png"],
+img[src="./images/logo-nyt.png"],
+img[src="./images/logo-spotify.png"] {
+  max-width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+img[src="./images/connectedness-mobile.png"],
+img[src="./images/speed-mobile.png"] {
+  width: 100%;
+  margin: 1.6rem 0;
+}
+img[src="./images/flexibility-mobile.png"] {
+  width: 100%;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1.6rem 0;
+}
+
+main > section:nth-child(2) > div:last-child {
+  padding: 1.6rem;
+}
+main > section:nth-child(2) > div:last-child p {
+  margin-bottom: 1.6rem;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2e71a6;
+}
+
+main > section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-child(3) > div:first-child {
+  padding: 1.6rem;
+  order: 1;
+}
+main > section:nth-child(3) > div:first-child p {
+  margin-bottom: 1.6rem;
+  order: 2;
+}
+
+main > section:nth-child(4) > div:last-child {
+  padding: 1.6rem;
+}
+main > section:nth-child(4) > div:last-child p {
+  margin-bottom: 1.6rem;
+}
+
+/* END MAIN */
